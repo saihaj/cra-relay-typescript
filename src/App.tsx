@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { GlobalWrapper } from './components'
+import { GlobalWrapper, CharacterCard } from './components'
 
 const App = () => (
   <GlobalWrapper>
     <div>
-      Home
+      home
+      <CharacterCard />
     </div>
   </GlobalWrapper>
 )
-
 export default App

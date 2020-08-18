@@ -5,3 +5,5 @@
  */
 
 export * from './global'
+export * from './relay'
+export * from './Character'
