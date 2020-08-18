@@ -1,0 +1,44 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          id: cache
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+        
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Build
+        run: npm run build
+
+      - name: Deploy to GH Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          build_dir: build
+          committer: saihaj <saihaj@users.noreply.github.com>
+          author: saihaj <saihaj@users.noreply.github.com>
+          keep_history: false
+          allow_empty_commit: false
+        env:
+          GITHUB_PAT: ${{ secrets.deploy_access_token }}
