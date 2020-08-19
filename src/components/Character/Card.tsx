@@ -1,11 +1,8 @@
-/* eslint-disable */
-
-// Need to work on fixing types
-import React from 'react'
+import React, { FC } from 'react'
 import graphql from 'babel-plugin-relay/macro'
 import { useQuery } from 'relay-hooks'
 
-import type { CardCharacterQueryResponse } from './__generated__/CardCharacterQuery.graphql'
+import type { CardCharacterQuery } from './__generated__/CardCharacterQuery.graphql'
 
 const query = graphql`
 query CardCharacterQuery($characterId: ID) {
@@ -15,23 +12,18 @@ query CardCharacterQuery($characterId: ID) {
 }
 `
 const variables = {
-  characterId: 1,
+  characterId: '1',
 }
 
-const Card = () => {
-  const { props, error } = useQuery( query, variables )
+const Card:FC = () => {
+  const { props, error } = useQuery<CardCharacterQuery>( query, variables )
 
   if ( props ) {
-    return (
-      <div>
-        {/* @ts-ignore */}
-        {props.character.name}
-      </div>
-    )
+    return <div>{props?.character?.name}</div>
   } if ( error ) {
     return <div>{error.message}</div>
   }
-  return <div>loading..</div>
+  return <div>loading...</div>
 }
 
 export default Card
