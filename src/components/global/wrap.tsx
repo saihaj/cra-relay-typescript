@@ -1,7 +1,9 @@
 import React, { ReactNode, ElementType } from 'react'
-import 'normalize.css'
 import { RelayEnvironmentProvider } from 'relay-hooks'
+import 'normalize.css'
+
 import { Environment } from '../relay'
+import './tailwind.output.css'
 
 interface WrapperProps {
   children: ReactNode

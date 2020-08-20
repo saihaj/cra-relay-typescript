@@ -14,3 +14,4 @@ This is typescript version of my [create-react-app template](https://github.com/
 * [`react-tools/relay-hooks`](https://github.com/relay-tools/relay-hooks)
 * https://github.com/sibelius/create-react-app-relay-modern
 * https://github.com/relay-tools/relay-compiler-language-typescript/tree/master/example
+* [Tailwind CSS Setup](https://medium.com/@mikeeeeeeey/create-react-app-tailwind-css-feat-postcss-631d9e33ba8c)

@@ -23,11 +23,15 @@ const Character:FC<PageProps> = () => {
   }, [ characterId ] )
 
   return (
-    <div>
-      <Link to="/">Home</Link>
-      <CharacterCard id={characterId} />
-      <Link to={`/character/${previousPage}`}>Previous</Link>
-      <Link to={`/character/${nextPage}`}>Next</Link>
+    <div className="flex flex-col">
+      <div className="mx-auto text-center">
+        <CharacterCard id={characterId} />
+        <div className="flex justify-between text-blue-600 text-2xl">
+          <Link to={`/character/${previousPage}`} className="hover:text-red-600">Previous</Link>
+          <Link to={`/character/${nextPage}`} className="hover:text-red-600">Next</Link>
+        </div>
+        <Link to="/" className="text-blue-600 text-xl hover:text-red-600">Home</Link>
+      </div>
     </div>
   )
 }

@@ -27,7 +27,7 @@ const Card:FC<CardProps> = ( { id }:CardProps ) => {
     const name = props?.character ? props?.character?.name : 'Not Found: (Some sort of server error maybe)'
     return (
       <div>
-        <h1>{name}</h1>
+        <h1 className="text-4xl font-bold">{name}</h1>
         <img alt={name || undefined} src={props?.character?.image || undefined} />
       </div>
     )
