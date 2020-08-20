@@ -36,7 +36,6 @@
     "start": "npm run relay; concurrently --kill-others --names \"react-scripts,relay,tailwind\" \"react-scripts start\" \"npm run relay -- --watch\" \"npm run tailwind -- -w\"",
     "build": "npm run relay && npm run tailwind && react-scripts build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --color",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "update-schema": "get-graphql-schema https://rickandmortyapi.com/graphql > src/schema.graphql",
     "relay": "relay-compiler --schema src/schema.graphql --src ./src/ --language typescript",
     "tailwind": "postcss src/components/global/styles.css -o src/components/global/tailwind.output.css"
@@ -63,7 +62,6 @@
     "autoprefixer": "^9.8.6",
     "babel-plugin-relay": "^10.0.1",
     "concurrently": "^5.3.0",
-    "conventional-changelog-cli": "^2.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.2",
