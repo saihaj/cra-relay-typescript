@@ -9,6 +9,7 @@ export type CardCharacterQueryVariables = {
 export type CardCharacterQueryResponse = {
     readonly character: {
         readonly name: string | null;
+        readonly image: string | null;
     } | null;
 };
 export type CardCharacterQuery = {
@@ -24,6 +25,7 @@ query CardCharacterQuery(
 ) {
   character(id: $characterId) {
     name
+    image
     id
   }
 }
@@ -50,6 +52,13 @@ v2 = {
   "kind": "ScalarField",
   "name": "name",
   "storageKey": null
+},
+v3 = {
+  "alias": null,
+  "args": null,
+  "kind": "ScalarField",
+  "name": "image",
+  "storageKey": null
 };
 return {
   "fragment": {
@@ -66,7 +75,8 @@ return {
         "name": "character",
         "plural": false,
         "selections": [
-          (v2/*: any*/)
+          (v2/*: any*/),
+          (v3/*: any*/)
         ],
         "storageKey": null
       }
@@ -89,6 +99,7 @@ return {
         "plural": false,
         "selections": [
           (v2/*: any*/),
+          (v3/*: any*/),
           {
             "alias": null,
             "args": null,
@@ -102,14 +113,14 @@ return {
     ]
   },
   "params": {
-    "cacheID": "6409491b7d8449ae10d02ba9a12202f7",
+    "cacheID": "49e98ca22c22c5192aa38e6a719c85b6",
     "id": null,
     "metadata": {},
     "name": "CardCharacterQuery",
     "operationKind": "query",
-    "text": "query CardCharacterQuery(\n  $characterId: ID\n) {\n  character(id: $characterId) {\n    name\n    id\n  }\n}\n"
+    "text": "query CardCharacterQuery(\n  $characterId: ID\n) {\n  character(id: $characterId) {\n    name\n    image\n    id\n  }\n}\n"
   }
 };
 })();
-(node as any).hash = '0ae3313cdfee084131211ec2ba177408';
+(node as any).hash = '20d21fd95b2f212826ca3b9db2902482';
 export default node;
