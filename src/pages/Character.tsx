@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from 'react'
 import { useParams, Link } from '@reach/router'
 
+import { homepage } from '../../package.json'
 import { PageProps } from '../lib/types'
 import { CharacterCard } from '../components'
 
@@ -27,10 +28,10 @@ const Character:FC<PageProps> = () => {
       <div className="mx-auto text-center">
         <CharacterCard id={characterId} />
         <div className="flex justify-between text-blue-600 text-2xl">
-          <Link to={`/character/${previousPage}`} className="hover:text-red-600">Previous</Link>
-          <Link to={`/character/${nextPage}`} className="hover:text-red-600">Next</Link>
+          <Link to={`/${homepage}/character/${previousPage}`} className="hover:text-red-600">Previous</Link>
+          <Link to={`/${homepage}/character/${nextPage}`} className="hover:text-red-600">Next</Link>
         </div>
-        <Link to="/" className="text-blue-600 text-xl hover:text-red-600">Home</Link>
+        <Link to={`/${homepage}`} className="text-blue-600 text-xl hover:text-red-600">Home</Link>
       </div>
     </div>
   )

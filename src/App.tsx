@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import { Router } from '@reach/router'
 
 import { GlobalWrapper } from './components'
+import { homepage } from '../package.json'
 
 const Home = lazy( () => import( './pages/Home' ) )
 const NotFound = lazy( () => import( './pages/404' ) )
@@ -11,7 +12,7 @@ const Character = lazy( () => import( './pages/Character' ) )
  * Setup Top-Level Routes for @reach/router
  */
 const NavigationRoutes = () => (
-  <Router>
+  <Router basepath={homepage}>
     <NotFound default />
     <Home path="/" />
     <Character path="character/:characterId" />
