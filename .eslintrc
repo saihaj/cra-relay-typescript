@@ -79,11 +79,6 @@
         "maxEOF": 1
       }
     ],
-    "lines-around-comment": [
-      "error",{
-        "beforeLineComment": true
-      }
-    ],
     "import/no-extraneous-dependencies": [
       "error", {
         "devDependencies": true
