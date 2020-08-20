@@ -40,5 +40,6 @@ jobs:
           author: saihaj <saihaj@users.noreply.github.com>
           keep_history: false
           allow_empty_commit: false
+          jekyll: false
         env:
-          GITHUB_PAT: ${{ secrets.deploy_access_token }}
+          GH_PAT: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
