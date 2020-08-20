@@ -9,6 +9,7 @@
   "bugs": {
     "url": "https://github.com/saihaj/cra-relay-typescript/issues"
   },
+  "homepage": "cra-relay-typescript",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -24,9 +25,13 @@
   "keywords": [
     "Relay",
     "create-react-app",
-    "typescript",
-    "GraphQL"
+    "TypeScript",
+    "GraphQL",
+    "Relay Tools",
+    "TailwindCSS",
+    "@reach/router"
   ],
+  "license": "MIT",
   "scripts": {
     "start": "npm run relay; concurrently --kill-others --names \"react-scripts,relay,tailwind\" \"react-scripts start\" \"npm run relay -- --watch\" \"npm run tailwind -- -w\"",
     "build": "npm run relay && npm run tailwind && react-scripts build",
