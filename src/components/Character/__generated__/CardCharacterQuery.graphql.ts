@@ -4,7 +4,7 @@
 
 import { ConcreteRequest } from "relay-runtime";
 export type CardCharacterQueryVariables = {
-    characterId?: string | null;
+    characterId: string;
 };
 export type CardCharacterQueryResponse = {
     readonly character: {
@@ -21,7 +21,7 @@ export type CardCharacterQuery = {
 
 /*
 query CardCharacterQuery(
-  $characterId: ID
+  $characterId: ID!
 ) {
   character(id: $characterId) {
     name
@@ -113,14 +113,14 @@ return {
     ]
   },
   "params": {
-    "cacheID": "49e98ca22c22c5192aa38e6a719c85b6",
+    "cacheID": "0c2405d0c4ba70b6afb8756235cc0c69",
     "id": null,
     "metadata": {},
     "name": "CardCharacterQuery",
     "operationKind": "query",
-    "text": "query CardCharacterQuery(\n  $characterId: ID\n) {\n  character(id: $characterId) {\n    name\n    image\n    id\n  }\n}\n"
+    "text": "query CardCharacterQuery(\n  $characterId: ID!\n) {\n  character(id: $characterId) {\n    name\n    image\n    id\n  }\n}\n"
   }
 };
 })();
-(node as any).hash = '20d21fd95b2f212826ca3b9db2902482';
+(node as any).hash = '525043c822f7acf127ff4b5a8f68f6fc';
 export default node;

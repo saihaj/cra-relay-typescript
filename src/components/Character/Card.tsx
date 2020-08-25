@@ -5,7 +5,7 @@ import { useQuery } from 'relay-hooks'
 import type { CardCharacterQuery } from './__generated__/CardCharacterQuery.graphql'
 
 const query = graphql`
-query CardCharacterQuery($characterId: ID) {
+query CardCharacterQuery($characterId: ID!) {
   character(id:$characterId) {
     name
     image
