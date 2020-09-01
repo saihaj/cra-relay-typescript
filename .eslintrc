@@ -4,8 +4,9 @@
     "es6": true
   },
   "extends": [
-    "react-app",
-    "airbnb"
+    "airbnb",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -20,6 +21,7 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "react/react-in-jsx-scope": 0,
     "array-bracket-spacing": [
       "error",
       "always"
@@ -55,7 +57,7 @@
     "react/jsx-props-no-spreading": 0,
     "react/sort-comp": 0,
     "react/jsx-one-expression-per-line": 0,
-    "react/prop-types": 0,
+    "react/require-default-props":0,
     "semi": [
       "error",
       "never"
@@ -84,11 +86,13 @@
         "devDependencies": true
         }
       ],
-      "@typescript-eslint/no-unused-vars": [
+      "react/display-name": 0,
+      "react/prop-types": 0,
+      "no-console": [
         2,
         {
-            "args": "none"
+          "allow": ["warn", "error"]
         }
-    ]
+      ]
   }
 }

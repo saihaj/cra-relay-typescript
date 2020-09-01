@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense, lazy, FC } from 'react'
 import { Router } from '@reach/router'
 
 import { GlobalWrapper } from './components'
@@ -22,7 +22,7 @@ const NavigationRoutes = () => (
 /**
  * Since we are lazy loading for router we use Suspense as fallback
  */
-const App = () => (
+const App:FC = () => (
   <GlobalWrapper>
     <Suspense fallback={<div>Loading...</div>}>
       <NavigationRoutes />
