@@ -47,7 +47,7 @@
     "react-dom": "^16.13.1",
     "react-relay": "^10.0.1",
     "react-scripts": "3.4.3",
-    "relay-hooks": "^3.5.2",
+    "relay-hooks": "^3.6.0",
     "relay-runtime": "^10.0.1"
   },
   "devDependencies": {
