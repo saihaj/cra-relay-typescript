@@ -1,6 +1,5 @@
 import { ReactNode, ElementType } from 'react'
 import { RelayEnvironmentProvider } from 'relay-hooks'
-import 'normalize.css'
 
 import { Environment } from '../relay'
 import './tailwind.output.css'
