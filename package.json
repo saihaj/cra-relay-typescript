@@ -34,7 +34,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run relay; concurrently --kill-others --names \"react-scripts,relay,tailwind\" \"react-scripts start\" \"npm run relay -- --watch\" \"npm run tailwind -- -w\"",
-    "build": "npm run relay && npm run tailwind -- --env=production && react-scripts build",
+    "build": "npm run relay && npm run tailwind -- --env=production && CI=false react-scripts build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --color",
     "update-schema": "get-graphql-schema https://rickandmortyapi.com/graphql > src/schema.graphql",
     "relay": "relay-compiler --schema src/schema.graphql --src ./src/ --language typescript",
