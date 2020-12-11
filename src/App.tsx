@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, FC } from 'react'
+import { Suspense, lazy, FC } from 'react'
 import { Router } from '@reach/router'
 
 import { GlobalWrapper } from './components'

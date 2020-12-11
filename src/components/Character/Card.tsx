@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import graphql from 'babel-plugin-relay/macro'
 import { useQuery } from 'relay-hooks'
 

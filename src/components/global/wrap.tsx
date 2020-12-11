@@ -1,4 +1,4 @@
-import React, { ReactNode, ElementType } from 'react'
+import { ReactNode, ElementType } from 'react'
 import { RelayEnvironmentProvider } from 'relay-hooks'
 import 'normalize.css'
 

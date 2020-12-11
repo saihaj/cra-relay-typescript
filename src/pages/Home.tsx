@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { Link } from '@reach/router'
 
 import { PageProps } from '../lib/types'

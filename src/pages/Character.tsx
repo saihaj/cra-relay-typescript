@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { useParams, Link } from '@reach/router'
 
 import { homepage } from '../../package.json'
