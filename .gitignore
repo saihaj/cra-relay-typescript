@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Tailwind generated file
 /src/components/global/tailwind.output.css
+
+.eslintcache
