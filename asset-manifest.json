@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/cra-relay-typescript/static/css/main.48b86510.chunk.css",
+    "main.js": "/cra-relay-typescript/static/js/main.32ca3b7d.chunk.js",
+    "main.js.map": "/cra-relay-typescript/static/js/main.32ca3b7d.chunk.js.map",
+    "runtime-main.js": "/cra-relay-typescript/static/js/runtime-main.7a57378c.js",
+    "runtime-main.js.map": "/cra-relay-typescript/static/js/runtime-main.7a57378c.js.map",
+    "static/js/2.9f92f322.chunk.js": "/cra-relay-typescript/static/js/2.9f92f322.chunk.js",
+    "static/js/2.9f92f322.chunk.js.map": "/cra-relay-typescript/static/js/2.9f92f322.chunk.js.map",
+    "static/js/3.aad80c0d.chunk.js": "/cra-relay-typescript/static/js/3.aad80c0d.chunk.js",
+    "static/js/3.aad80c0d.chunk.js.map": "/cra-relay-typescript/static/js/3.aad80c0d.chunk.js.map",
+    "static/js/4.fba0b9f1.chunk.js": "/cra-relay-typescript/static/js/4.fba0b9f1.chunk.js",
+    "static/js/4.fba0b9f1.chunk.js.map": "/cra-relay-typescript/static/js/4.fba0b9f1.chunk.js.map",
+    "static/js/5.00d8a683.chunk.js": "/cra-relay-typescript/static/js/5.00d8a683.chunk.js",
+    "static/js/5.00d8a683.chunk.js.map": "/cra-relay-typescript/static/js/5.00d8a683.chunk.js.map",
+    "index.html": "/cra-relay-typescript/index.html",
+    "static/css/main.48b86510.chunk.css.map": "/cra-relay-typescript/static/css/main.48b86510.chunk.css.map",
+    "static/js/2.9f92f322.chunk.js.LICENSE.txt": "/cra-relay-typescript/static/js/2.9f92f322.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a57378c.js",
+    "static/js/2.9f92f322.chunk.js",
+    "static/css/main.48b86510.chunk.css",
+    "static/js/main.32ca3b7d.chunk.js"
+  ]
+}

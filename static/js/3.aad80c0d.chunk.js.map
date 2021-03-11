@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/404.tsx"],"names":["NotFound"],"mappings":"sJAMeA,UAFgB,kBAAM","file":"static/js/3.aad80c0d.chunk.js","sourcesContent":["import { FC } from 'react'\n\nimport { PageProps } from '../lib/types'\n\nconst NotFound:FC<PageProps> = () => <div>Error: 404</div>\n\nexport default NotFound\n"],"sourceRoot":""}
