@@ -15,6 +15,8 @@ I wanted to use Relay in my Typescript CRA. for some sort of boilerplate/templat
 ## Why not official relay hooks? 
 From what I understand, official relay hooks are meant to work best with experimental concurrent mode since they all require you to use `Suspense` and that means if I use that I need to use experimental version of React and Relay.
 
+**Hooks are now stable in [`relay@v11`](https://relay.dev/blog/2021/03/09/introducing-relay-hooks/) and they use Suspense for data fetching.**
+
 ## Why `relay-tools/relay-hooks`?
 From [`relay-tools/relay-hooks`](https://github.com/relay-tools/relay-hooks#relay-hooks-1)
 > It is a stable library and none of its dependencies is experimental and it allows you to immediately use react hooks with relay-runtime and it is designed for easy migration to react-relay hooks.
