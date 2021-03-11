@@ -1,10 +1,12 @@
 # cra-relay-typescript
 
+<div>
 <img src="https://create-react-app.dev/img/logo.svg" alt="create-react-app logo" width="50"/>
 <img src="https://relay.dev/img/relay.svg" alt="Relay logo" width="50"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript logo" width="40"/>
 <img src="https://raw.githubusercontent.com/reach/router/master/logo-vertical.png" alt="TypeScript logo" width="90"/>
 <img alt="Tailwind CSS Logo" src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss.com/master/public/android-chrome-512x512.png" width="50">
+</div>
 
 This is an example app for playing with Relay in [Typescript create-react-app](https://create-react-app.dev)
 using https://rickandmortyapi.com/graphql
